@@ -15,5 +15,7 @@ spec:
               image: alpine
               script: |
                 #!/bin/sh
+                echo "Starting test..."
+                sleep 30  # Sleep for 30 seconds so you can see "in_progress"
                 echo "This will fail!"
                 exit 1
